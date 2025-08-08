@@ -1,0 +1,212 @@
+# version: "3.9"
+
+services:
+  mongodb:
+    container_name: mongodb_dataFlow369
+    image: mongodb/mongodb-community-server:7.0.21-ubuntu2204
+    ports:
+      - "27017:27017"
+    networks:
+      - projet3604-net
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - mongodb-data:/data/db
+      - ./dockerisation/mongo/data:/donnee
+
+  namenode:
+    image: apache/hadoop:3
+    hostname: namenode
+    command: ["hdfs", "namenode"]
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    env_file:
+      - ./dockerisation/hadoop/config
+    environment:
+      ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+    networks:
+      - projet3604-net
+
+  datanode:
+    image: apache/hadoop:3
+    command: ["hdfs", "datanode"]
+    env_file:
+      - ./dockerisation/hadoop/config
+    networks:
+      - projet3604-net
+    ports:
+      - "9864:9864"
+
+  resourcemanager:
+    image: apache/hadoop:3
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    ports:
+      - "8088:8088"
+    env_file:
+      - ./dockerisation/hadoop/config
+    volumes:
+      - ./test.sh:/opt/test.sh
+    networks:
+      - projet3604-net
+
+  nodemanager:
+    image: apache/hadoop:3
+    command: ["yarn", "nodemanager"]
+    env_file:
+      - ./dockerisation/hadoop/config
+    networks:
+      - projet3604-net
+
+  neo4j:
+    image: neo4j:community-ubi9
+    container_name: neo4j_dataFlow369
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    restart: unless-stopped
+    volumes:
+      - ./dockerisation/neo4j/data:/data
+      - ./dockerisation/neo4j/conf:/conf
+      - ./dockerisation/neo4j/logs:/logs
+      - ./dockerisation/neo4j/plugins:/plugins
+    environment:
+      - NEO4J_AUTH=neo4j/12345678
+    networks:
+      - projet3604-net
+
+  mysql-api:
+    image: mysql:latest
+    container_name: mysql-api
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - projet3604-net
+
+  broker:
+    image: apache/kafka:latest
+    container_name: broker
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://localhost:9092,CONTROLLER://localhost:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_NUM_PARTITIONS: 3
+    networks:
+      - projet3604-net
+
+  cassandra:
+    image: cassandra:4.1
+    container_name: cassandra_dataFlow369
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=MonClusterCassandra
+      - CASSANDRA_DC=dc1
+      - CASSANDRA_RACK=rack1
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+    networks:
+      - projet3604-net
+
+  elasticsearch:
+    image: elasticsearch:9.0.3
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+    volumes:
+      - elastic_data:/usr/share/elasticsearch/data/
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms256m -Xmx256m
+    networks:
+      - projet3604-net
+
+  logstash:
+    image: logstash:9.0.3
+    container_name: logstash
+    ports:
+      - "5044:5044"
+      - "9600:9600"
+    environment:
+      - LS_JAVA_OPTS=-Xms256m -Xmx256m
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./dockerisation/logstash/config:/usr/share/logstash/config:ro
+      - ./dockerisation/logstash/pipeline:/usr/share/logstash/pipeline:ro
+      - ./dockerisation/logstash/data:/usr/share/logstash/donnee
+    networks:
+      - projet3604-net
+
+  kibana:
+    image: kibana:9.0.3
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - projet3604-net
+
+  postgres:
+    image: postgres
+    container_name: postgres_datawarehouse
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5433:5433"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  api_thierno_education : 
+    container_name : api_thierno_education
+    image : thierno44/api-education
+    ports : 
+     - "8000:8000"
+    networks : 
+      - projet3604-net
+    restart: always
+    depends_on : 
+      - mysql-api 
+  
+  insert_in_datalake_dataflow_360 : 
+    container_name : insertion_datalake_dataflow360
+    image : insert_in_datalake_dataflow_360
+    networks : 
+      - projet3604-net
+    depends_on : 
+      - mysql-api 
+      - namenode 
+      - datanode
+      - api_thierno_education
+        
+
+volumes:
+  mysql_data:
+  elastic_data:
+  cassandra-data:
+  mongodb-data:
+  pg_data:
+
+networks:
+  projet3604-net:
+    driver: bridge
