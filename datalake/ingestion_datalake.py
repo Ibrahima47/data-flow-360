@@ -2,6 +2,9 @@ import requests
 from hdfs import InsecureClient
 import csv
 
+
+
+
 def recuperer_donnees(endpoint, token):
 
     donnees =  requests.get(f"{url}/{endpoint}", headers={"Authorization":f"Bearer {token}"})
