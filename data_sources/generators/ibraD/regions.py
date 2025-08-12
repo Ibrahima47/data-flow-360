@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Connexion à MongoDB (ajuste l'URI si nécessaire)
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://root:root@localhost:27017/")
 db = client["datasetMongo"]
 regions_collection = db["regions"]
 

@@ -1,0 +1,802 @@
+[
+    {
+        "ID": "1",
+        "Nom": "Collège El Hadji Omar Tall",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Kolda",
+        "Effectif": "138"
+    },
+    {
+        "ID": "2",
+        "Nom": "Lycée Lat Dior",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Thiès",
+        "Effectif": "313"
+    },
+    {
+        "ID": "3",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Saint-Louis",
+        "Effectif": "329"
+    },
+    {
+        "ID": "4",
+        "Nom": "École El Hadji Omar Tall",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "469"
+    },
+    {
+        "ID": "5",
+        "Nom": "École Lat Dior",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Diourbel",
+        "Effectif": "90"
+    },
+    {
+        "ID": "6",
+        "Nom": "Institut Maba Diakhou Ba",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Dakar",
+        "Effectif": "230"
+    },
+    {
+        "ID": "7",
+        "Nom": "Institut Mariama Ba",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Saint-Louis",
+        "Effectif": "510"
+    },
+    {
+        "ID": "8",
+        "Nom": "Institut Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Matam",
+        "Effectif": "456"
+    },
+    {
+        "ID": "9",
+        "Nom": "Institut El Hadji Omar Tall",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Kaolack",
+        "Effectif": "213"
+    },
+    {
+        "ID": "10",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Matam",
+        "Effectif": "258"
+    },
+    {
+        "ID": "11",
+        "Nom": "École Lat Dior",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Tambacounda",
+        "Effectif": "399"
+    },
+    {
+        "ID": "12",
+        "Nom": "Institut Aline Sitoe Diatta",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Sédhiou",
+        "Effectif": "229"
+    },
+    {
+        "ID": "13",
+        "Nom": "Collège Blaise Diagne",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Kaffrine",
+        "Effectif": "217"
+    },
+    {
+        "ID": "14",
+        "Nom": "Institut Léopold Sédar Senghor",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Thiès",
+        "Effectif": "349"
+    },
+    {
+        "ID": "15",
+        "Nom": "Collège Léopold Sédar Senghor",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kédougou",
+        "Effectif": "139"
+    },
+    {
+        "ID": "16",
+        "Nom": "École Lat Dior",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Tambacounda",
+        "Effectif": "415"
+    },
+    {
+        "ID": "17",
+        "Nom": "École Blaise Diagne",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Fatick",
+        "Effectif": "352"
+    },
+    {
+        "ID": "18",
+        "Nom": "École Lat Dior",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Kaffrine",
+        "Effectif": "159"
+    },
+    {
+        "ID": "19",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Louga",
+        "Effectif": "55"
+    },
+    {
+        "ID": "20",
+        "Nom": "Lycée Lat Dior",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "295"
+    },
+    {
+        "ID": "21",
+        "Nom": "Institut Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kédougou",
+        "Effectif": "467"
+    },
+    {
+        "ID": "22",
+        "Nom": "Lycée El Hadji Omar Tall",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Kolda",
+        "Effectif": "443"
+    },
+    {
+        "ID": "23",
+        "Nom": "Lycée Mariama Ba",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Ziguinchor",
+        "Effectif": "434"
+    },
+    {
+        "ID": "24",
+        "Nom": "École Lat Dior",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Diourbel",
+        "Effectif": "423"
+    },
+    {
+        "ID": "25",
+        "Nom": "École Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Thiès",
+        "Effectif": "457"
+    },
+    {
+        "ID": "26",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kaolack",
+        "Effectif": "225"
+    },
+    {
+        "ID": "27",
+        "Nom": "Institut Maba Diakhou Ba",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "309"
+    },
+    {
+        "ID": "28",
+        "Nom": "Institut Blaise Diagne",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Kaffrine",
+        "Effectif": "407"
+    },
+    {
+        "ID": "29",
+        "Nom": "École Maba Diakhou Ba",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Dakar",
+        "Effectif": "77"
+    },
+    {
+        "ID": "30",
+        "Nom": "Lycée Maba Diakhou Ba",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Tambacounda",
+        "Effectif": "194"
+    },
+    {
+        "ID": "31",
+        "Nom": "Collège Léopold Sédar Senghor",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "452"
+    },
+    {
+        "ID": "32",
+        "Nom": "Collège Blaise Diagne",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Diourbel",
+        "Effectif": "211"
+    },
+    {
+        "ID": "33",
+        "Nom": "Institut Blaise Diagne",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Ziguinchor",
+        "Effectif": "469"
+    },
+    {
+        "ID": "34",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Saint-Louis",
+        "Effectif": "53"
+    },
+    {
+        "ID": "35",
+        "Nom": "Collège Aline Sitoe Diatta",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Thiès",
+        "Effectif": "142"
+    },
+    {
+        "ID": "36",
+        "Nom": "École Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Dakar",
+        "Effectif": "188"
+    },
+    {
+        "ID": "37",
+        "Nom": "Collège Léopold Sédar Senghor",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Diourbel",
+        "Effectif": "225"
+    },
+    {
+        "ID": "38",
+        "Nom": "École Cheikh Anta Diop",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Dakar",
+        "Effectif": "418"
+    },
+    {
+        "ID": "39",
+        "Nom": "École Lat Dior",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Ziguinchor",
+        "Effectif": "291"
+    },
+    {
+        "ID": "40",
+        "Nom": "Collège Lat Dior",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Ziguinchor",
+        "Effectif": "74"
+    },
+    {
+        "ID": "41",
+        "Nom": "Collège Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "529"
+    },
+    {
+        "ID": "42",
+        "Nom": "Institut Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Kolda",
+        "Effectif": "503"
+    },
+    {
+        "ID": "43",
+        "Nom": "Collège Cheikh Anta Diop",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Dakar",
+        "Effectif": "290"
+    },
+    {
+        "ID": "44",
+        "Nom": "Collège Maba Diakhou Ba",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "202"
+    },
+    {
+        "ID": "45",
+        "Nom": "École Aline Sitoe Diatta",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kolda",
+        "Effectif": "403"
+    },
+    {
+        "ID": "46",
+        "Nom": "Collège El Hadji Omar Tall",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Saint-Louis",
+        "Effectif": "453"
+    },
+    {
+        "ID": "47",
+        "Nom": "Institut Cheikh Anta Diop",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kolda",
+        "Effectif": "98"
+    },
+    {
+        "ID": "48",
+        "Nom": "École Maba Diakhou Ba",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Kolda",
+        "Effectif": "379"
+    },
+    {
+        "ID": "49",
+        "Nom": "Collège Cheikh Anta Diop",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Tambacounda",
+        "Effectif": "135"
+    },
+    {
+        "ID": "50",
+        "Nom": "Institut Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Kédougou",
+        "Effectif": "211"
+    },
+    {
+        "ID": "51",
+        "Nom": "École El Hadji Omar Tall",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Matam",
+        "Effectif": "259"
+    },
+    {
+        "ID": "52",
+        "Nom": "Collège Aline Sitoe Diatta",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Sédhiou",
+        "Effectif": "219"
+    },
+    {
+        "ID": "53",
+        "Nom": "École Lat Dior",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Diourbel",
+        "Effectif": "278"
+    },
+    {
+        "ID": "54",
+        "Nom": "École Maba Diakhou Ba",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Fatick",
+        "Effectif": "334"
+    },
+    {
+        "ID": "55",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Thiès",
+        "Effectif": "161"
+    },
+    {
+        "ID": "56",
+        "Nom": "École Maba Diakhou Ba",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Kédougou",
+        "Effectif": "525"
+    },
+    {
+        "ID": "57",
+        "Nom": "Collège Léopold Sédar Senghor",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Louga",
+        "Effectif": "68"
+    },
+    {
+        "ID": "58",
+        "Nom": "Institut Lat Dior",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Fatick",
+        "Effectif": "159"
+    },
+    {
+        "ID": "59",
+        "Nom": "Institut El Hadji Omar Tall",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Dakar",
+        "Effectif": "371"
+    },
+    {
+        "ID": "60",
+        "Nom": "Collège Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Dakar",
+        "Effectif": "78"
+    },
+    {
+        "ID": "61",
+        "Nom": "Lycée Maba Diakhou Ba",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Kaffrine",
+        "Effectif": "323"
+    },
+    {
+        "ID": "62",
+        "Nom": "Collège Cheikh Anta Diop",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Tambacounda",
+        "Effectif": "517"
+    },
+    {
+        "ID": "63",
+        "Nom": "Lycée El Hadji Omar Tall",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Ziguinchor",
+        "Effectif": "409"
+    },
+    {
+        "ID": "64",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Tambacounda",
+        "Effectif": "255"
+    },
+    {
+        "ID": "65",
+        "Nom": "École Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "428"
+    },
+    {
+        "ID": "66",
+        "Nom": "Collège Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Louga",
+        "Effectif": "119"
+    },
+    {
+        "ID": "67",
+        "Nom": "Institut Cheikh Anta Diop",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Sédhiou",
+        "Effectif": "546"
+    },
+    {
+        "ID": "68",
+        "Nom": "Lycée Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "531"
+    },
+    {
+        "ID": "69",
+        "Nom": "Collège Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Fatick",
+        "Effectif": "306"
+    },
+    {
+        "ID": "70",
+        "Nom": "Collège Maba Diakhou Ba",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Fatick",
+        "Effectif": "255"
+    },
+    {
+        "ID": "71",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Kaolack",
+        "Effectif": "391"
+    },
+    {
+        "ID": "72",
+        "Nom": "Lycée Cheikh Anta Diop",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Ziguinchor",
+        "Effectif": "346"
+    },
+    {
+        "ID": "73",
+        "Nom": "Collège Léopold Sédar Senghor",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Kolda",
+        "Effectif": "161"
+    },
+    {
+        "ID": "74",
+        "Nom": "École Léopold Sédar Senghor",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Saint-Louis",
+        "Effectif": "376"
+    },
+    {
+        "ID": "75",
+        "Nom": "École Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Tambacounda",
+        "Effectif": "404"
+    },
+    {
+        "ID": "76",
+        "Nom": "Lycée Mariama Ba",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Kédougou",
+        "Effectif": "342"
+    },
+    {
+        "ID": "77",
+        "Nom": "École Mariama Ba",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "58"
+    },
+    {
+        "ID": "78",
+        "Nom": "Collège Aline Sitoe Diatta",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Tambacounda",
+        "Effectif": "272"
+    },
+    {
+        "ID": "79",
+        "Nom": "Lycée Mariama Ba",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Sédhiou",
+        "Effectif": "221"
+    },
+    {
+        "ID": "80",
+        "Nom": "Collège Maba Diakhou Ba",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kaffrine",
+        "Effectif": "212"
+    },
+    {
+        "ID": "81",
+        "Nom": "Collège Blaise Diagne",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Thiès",
+        "Effectif": "449"
+    },
+    {
+        "ID": "82",
+        "Nom": "École Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Kaolack",
+        "Effectif": "132"
+    },
+    {
+        "ID": "83",
+        "Nom": "Institut Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Matam",
+        "Effectif": "290"
+    },
+    {
+        "ID": "84",
+        "Nom": "Lycée El Hadji Omar Tall",
+        "Type": "École Primaire",
+        "Statut": "Public",
+        "Région": "Diourbel",
+        "Effectif": "148"
+    },
+    {
+        "ID": "85",
+        "Nom": "Collège Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Kolda",
+        "Effectif": "503"
+    },
+    {
+        "ID": "86",
+        "Nom": "Lycée Cheikh Anta Diop",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Fatick",
+        "Effectif": "53"
+    },
+    {
+        "ID": "87",
+        "Nom": "Lycée Cheikh Anta Diop",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Saint-Louis",
+        "Effectif": "113"
+    },
+    {
+        "ID": "88",
+        "Nom": "Institut Léopold Sédar Senghor",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Diourbel",
+        "Effectif": "259"
+    },
+    {
+        "ID": "89",
+        "Nom": "Collège El Hadji Omar Tall",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "69"
+    },
+    {
+        "ID": "90",
+        "Nom": "Lycée Blaise Diagne",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Louga",
+        "Effectif": "326"
+    },
+    {
+        "ID": "91",
+        "Nom": "École El Hadji Omar Tall",
+        "Type": "École Technique",
+        "Statut": "Privé",
+        "Région": "Kédougou",
+        "Effectif": "386"
+    },
+    {
+        "ID": "92",
+        "Nom": "École El Hadji Omar Tall",
+        "Type": "École Technique",
+        "Statut": "Public",
+        "Région": "Kaolack",
+        "Effectif": "286"
+    },
+    {
+        "ID": "93",
+        "Nom": "École Mariama Ba",
+        "Type": "Collège",
+        "Statut": "Privé",
+        "Région": "Thiès",
+        "Effectif": "320"
+    },
+    {
+        "ID": "94",
+        "Nom": "École Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Sédhiou",
+        "Effectif": "281"
+    },
+    {
+        "ID": "95",
+        "Nom": "Institut El Hadji Omar Tall",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Saint-Louis",
+        "Effectif": "235"
+    },
+    {
+        "ID": "96",
+        "Nom": "Lycée Aline Sitoe Diatta",
+        "Type": "École Primaire",
+        "Statut": "Privé",
+        "Région": "Saint-Louis",
+        "Effectif": "517"
+    },
+    {
+        "ID": "97",
+        "Nom": "Lycée Léopold Sédar Senghor",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "95"
+    },
+    {
+        "ID": "98",
+        "Nom": "Institut Aline Sitoe Diatta",
+        "Type": "Lycée",
+        "Statut": "Privé",
+        "Région": "Kédougou",
+        "Effectif": "72"
+    },
+    {
+        "ID": "99",
+        "Nom": "Lycée Maba Diakhou Ba",
+        "Type": "Lycée",
+        "Statut": "Public",
+        "Région": "Kaolack",
+        "Effectif": "537"
+    },
+    {
+        "ID": "100",
+        "Nom": "École Blaise Diagne",
+        "Type": "Collège",
+        "Statut": "Public",
+        "Région": "Louga",
+        "Effectif": "119"
+    }
+]

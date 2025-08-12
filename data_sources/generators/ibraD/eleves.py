@@ -5,7 +5,7 @@ from faker import Faker
 fake = Faker("fr_FR")
 
 # Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://root:root@localhost:27017/")
 db = client["datasetMongo"]
 eleves_collection = db["eleves"]
 

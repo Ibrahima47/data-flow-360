@@ -1,0 +1,100 @@
+[
+    {
+        "ID": "1",
+        "Nom Région": "Dakar",
+        "Chef-lieu": "Dakar",
+        "Nb Établissements": "25",
+        "Population Scolaire": "2500"
+    },
+    {
+        "ID": "2",
+        "Nom Région": "Thiès",
+        "Chef-lieu": "Thiès",
+        "Nb Établissements": "12",
+        "Population Scolaire": "1200"
+    },
+    {
+        "ID": "3",
+        "Nom Région": "Saint-Louis",
+        "Chef-lieu": "Saint-Louis",
+        "Nb Établissements": "8",
+        "Population Scolaire": "800"
+    },
+    {
+        "ID": "4",
+        "Nom Région": "Diourbel",
+        "Chef-lieu": "Diourbel",
+        "Nb Établissements": "6",
+        "Population Scolaire": "600"
+    },
+    {
+        "ID": "5",
+        "Nom Région": "Louga",
+        "Chef-lieu": "Louga",
+        "Nb Établissements": "5",
+        "Population Scolaire": "500"
+    },
+    {
+        "ID": "6",
+        "Nom Région": "Fatick",
+        "Chef-lieu": "Fatick",
+        "Nb Établissements": "4",
+        "Population Scolaire": "400"
+    },
+    {
+        "ID": "7",
+        "Nom Région": "Kaolack",
+        "Chef-lieu": "Kaolack",
+        "Nb Établissements": "7",
+        "Population Scolaire": "700"
+    },
+    {
+        "ID": "8",
+        "Nom Région": "Kolda",
+        "Chef-lieu": "Kolda",
+        "Nb Établissements": "5",
+        "Population Scolaire": "500"
+    },
+    {
+        "ID": "9",
+        "Nom Région": "Ziguinchor",
+        "Chef-lieu": "Ziguinchor",
+        "Nb Établissements": "6",
+        "Population Scolaire": "600"
+    },
+    {
+        "ID": "10",
+        "Nom Région": "Tambacounda",
+        "Chef-lieu": "Tambacounda",
+        "Nb Établissements": "4",
+        "Population Scolaire": "400"
+    },
+    {
+        "ID": "11",
+        "Nom Région": "Kaffrine",
+        "Chef-lieu": "Kaffrine",
+        "Nb Établissements": "3",
+        "Population Scolaire": "300"
+    },
+    {
+        "ID": "12",
+        "Nom Région": "Kédougou",
+        "Chef-lieu": "Kédougou",
+        "Nb Établissements": "2",
+        "Population Scolaire": "200"
+    },
+    {
+        "ID": "13",
+        "Nom Région": "Matam",
+        "Chef-lieu": "Matam",
+        "Nb Établissements": "3",
+        "Population Scolaire": "300"
+    },
+    {
+        "ID": "14",
+        "Nom Région": "Sédhiou",
+        "Chef-lieu": "Sédhiou",
+        "Nb Établissements": "4",
+        "Population Scolaire": "400"
+    }
+]

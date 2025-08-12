@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import random
 
 #  Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://root:root@localhost:27017/")
 db = client["datasetMongo"]
 
 # Charger enseignants et matières
@@ -42,6 +42,6 @@ for niveau in niveaux:
         cours_id += 1
 
 #Insertion
-cours_collection.insert_many(cours).
+cours_collection.insert_many(cours)
 
 print(f"{len(cours)} cours générés et insérés dans la collection 'cours'.")

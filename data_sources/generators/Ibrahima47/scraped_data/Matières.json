@@ -1,0 +1,1752 @@
+[
+    {
+        "ID": "1",
+        "Nom Matière": "Sciences Naturelles Primaire 1",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "2",
+        "Nom Matière": "Français Lycée 1",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "3",
+        "Nom Matière": "Mathématiques Primaire 1",
+        "Domaine": "Mathématiques",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "4",
+        "Nom Matière": "Français Collège 1",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "5",
+        "Nom Matière": "Sciences Naturelles Primaire 1",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "6",
+        "Nom Matière": "Éducation Physique Lycée 1",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "7",
+        "Nom Matière": "Mathématiques Technique 1",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "8",
+        "Nom Matière": "Éducation Physique Technique 1",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "9",
+        "Nom Matière": "Histoire-Géographie Collège 1",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "10",
+        "Nom Matière": "Arabe Collège 2",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "11",
+        "Nom Matière": "Sciences Naturelles Technique 2",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "12",
+        "Nom Matière": "Sciences Physiques Lycée 2",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "13",
+        "Nom Matière": "Sciences Naturelles Primaire 2",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "14",
+        "Nom Matière": "Mathématiques Lycée 2",
+        "Domaine": "Mathématiques",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "15",
+        "Nom Matière": "Arts Primaire 2",
+        "Domaine": "Arts",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "16",
+        "Nom Matière": "Anglais Lycée 2",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "17",
+        "Nom Matière": "Arabe Collège 2",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "18",
+        "Nom Matière": "Arabe Primaire 2",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "19",
+        "Nom Matière": "Arabe Collège 2",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "20",
+        "Nom Matière": "Histoire-Géographie Lycée 3",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "21",
+        "Nom Matière": "Français Primaire 3",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "22",
+        "Nom Matière": "Français Lycée 3",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "23",
+        "Nom Matière": "Arabe Technique 3",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "24",
+        "Nom Matière": "Arabe Primaire 3",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "25",
+        "Nom Matière": "Anglais Collège 3",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "26",
+        "Nom Matière": "Arts Technique 3",
+        "Domaine": "Arts",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "27",
+        "Nom Matière": "Sciences Physiques Lycée 3",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "28",
+        "Nom Matière": "Arts Collège 3",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "29",
+        "Nom Matière": "Histoire-Géographie Technique 3",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "30",
+        "Nom Matière": "Mathématiques Technique 4",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "31",
+        "Nom Matière": "Histoire-Géographie Lycée 4",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "32",
+        "Nom Matière": "Informatique Lycée 4",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "33",
+        "Nom Matière": "Sciences Naturelles Technique 4",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "34",
+        "Nom Matière": "Sciences Naturelles Technique 4",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "35",
+        "Nom Matière": "Anglais Collège 4",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "36",
+        "Nom Matière": "Sciences Physiques Technique 4",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "37",
+        "Nom Matière": "Français Collège 4",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "38",
+        "Nom Matière": "Arts Primaire 4",
+        "Domaine": "Arts",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "39",
+        "Nom Matière": "Informatique Collège 4",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "40",
+        "Nom Matière": "Sciences Naturelles Technique 5",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "41",
+        "Nom Matière": "Anglais Lycée 5",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "42",
+        "Nom Matière": "Français Collège 5",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "43",
+        "Nom Matière": "Histoire-Géographie Technique 5",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "44",
+        "Nom Matière": "Anglais Lycée 5",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "45",
+        "Nom Matière": "Arabe Collège 5",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "46",
+        "Nom Matière": "Anglais Collège 5",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "47",
+        "Nom Matière": "Arts Collège 5",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "48",
+        "Nom Matière": "Arabe Technique 5",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "49",
+        "Nom Matière": "Français Collège 5",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "50",
+        "Nom Matière": "Arabe Lycée 6",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "51",
+        "Nom Matière": "Anglais Primaire 6",
+        "Domaine": "Anglais",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "52",
+        "Nom Matière": "Français Technique 6",
+        "Domaine": "Français",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "53",
+        "Nom Matière": "Arts Lycée 6",
+        "Domaine": "Arts",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "54",
+        "Nom Matière": "Histoire-Géographie Primaire 6",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "55",
+        "Nom Matière": "Mathématiques Collège 6",
+        "Domaine": "Mathématiques",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "56",
+        "Nom Matière": "Éducation Physique Technique 6",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "57",
+        "Nom Matière": "Arabe Technique 6",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "58",
+        "Nom Matière": "Informatique Collège 6",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "59",
+        "Nom Matière": "Français Technique 6",
+        "Domaine": "Français",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "60",
+        "Nom Matière": "Français Collège 7",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "61",
+        "Nom Matière": "Histoire-Géographie Lycée 7",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "62",
+        "Nom Matière": "Arts Collège 7",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "63",
+        "Nom Matière": "Mathématiques Technique 7",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "64",
+        "Nom Matière": "Sciences Naturelles Lycée 7",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "65",
+        "Nom Matière": "Mathématiques Technique 7",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "66",
+        "Nom Matière": "Informatique Primaire 7",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "67",
+        "Nom Matière": "Éducation Physique Primaire 7",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "68",
+        "Nom Matière": "Sciences Physiques Collège 7",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "69",
+        "Nom Matière": "Anglais Lycée 7",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "70",
+        "Nom Matière": "Arts Lycée 8",
+        "Domaine": "Arts",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "71",
+        "Nom Matière": "Français Lycée 8",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "72",
+        "Nom Matière": "Français Collège 8",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "73",
+        "Nom Matière": "Arabe Technique 8",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "74",
+        "Nom Matière": "Sciences Naturelles Technique 8",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "75",
+        "Nom Matière": "Arts Lycée 8",
+        "Domaine": "Arts",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "76",
+        "Nom Matière": "Arabe Collège 8",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "77",
+        "Nom Matière": "Informatique Collège 8",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "78",
+        "Nom Matière": "Français Collège 8",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "79",
+        "Nom Matière": "Français Collège 8",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "80",
+        "Nom Matière": "Anglais Primaire 9",
+        "Domaine": "Anglais",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "81",
+        "Nom Matière": "Sciences Naturelles Collège 9",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "82",
+        "Nom Matière": "Histoire-Géographie Primaire 9",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "83",
+        "Nom Matière": "Arabe Primaire 9",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "84",
+        "Nom Matière": "Histoire-Géographie Primaire 9",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "85",
+        "Nom Matière": "Français Primaire 9",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "86",
+        "Nom Matière": "Français Technique 9",
+        "Domaine": "Français",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "87",
+        "Nom Matière": "Sciences Physiques Lycée 9",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "88",
+        "Nom Matière": "Anglais Lycée 9",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "89",
+        "Nom Matière": "Français Lycée 9",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "90",
+        "Nom Matière": "Sciences Naturelles Collège 10",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "91",
+        "Nom Matière": "Sciences Physiques Collège 10",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "92",
+        "Nom Matière": "Éducation Physique Primaire 10",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "93",
+        "Nom Matière": "Arabe Primaire 10",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "94",
+        "Nom Matière": "Arts Technique 10",
+        "Domaine": "Arts",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "95",
+        "Nom Matière": "Anglais Collège 10",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "96",
+        "Nom Matière": "Sciences Naturelles Lycée 10",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "97",
+        "Nom Matière": "Français Lycée 10",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "98",
+        "Nom Matière": "Mathématiques Lycée 10",
+        "Domaine": "Mathématiques",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "99",
+        "Nom Matière": "Arabe Lycée 10",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "100",
+        "Nom Matière": "Sciences Physiques Primaire 11",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "101",
+        "Nom Matière": "Histoire-Géographie Collège 11",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "102",
+        "Nom Matière": "Informatique Collège 11",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "103",
+        "Nom Matière": "Mathématiques Primaire 11",
+        "Domaine": "Mathématiques",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "104",
+        "Nom Matière": "Éducation Physique Technique 11",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "105",
+        "Nom Matière": "Sciences Naturelles Technique 11",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "106",
+        "Nom Matière": "Histoire-Géographie Collège 11",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "107",
+        "Nom Matière": "Sciences Physiques Primaire 11",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "108",
+        "Nom Matière": "Sciences Physiques Primaire 11",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "109",
+        "Nom Matière": "Arabe Lycée 11",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "110",
+        "Nom Matière": "Éducation Physique Lycée 12",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "111",
+        "Nom Matière": "Histoire-Géographie Lycée 12",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "112",
+        "Nom Matière": "Anglais Collège 12",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "113",
+        "Nom Matière": "Français Primaire 12",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "114",
+        "Nom Matière": "Anglais Primaire 12",
+        "Domaine": "Anglais",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "115",
+        "Nom Matière": "Histoire-Géographie Collège 12",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "116",
+        "Nom Matière": "Français Collège 12",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "117",
+        "Nom Matière": "Histoire-Géographie Lycée 12",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "118",
+        "Nom Matière": "Éducation Physique Primaire 12",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "119",
+        "Nom Matière": "Sciences Physiques Collège 12",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "120",
+        "Nom Matière": "Sciences Physiques Lycée 13",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "121",
+        "Nom Matière": "Informatique Technique 13",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "122",
+        "Nom Matière": "Sciences Naturelles Primaire 13",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "123",
+        "Nom Matière": "Mathématiques Collège 13",
+        "Domaine": "Mathématiques",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "124",
+        "Nom Matière": "Français Lycée 13",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "125",
+        "Nom Matière": "Informatique Collège 13",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "126",
+        "Nom Matière": "Informatique Lycée 13",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "127",
+        "Nom Matière": "Informatique Primaire 13",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "128",
+        "Nom Matière": "Arabe Lycée 13",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "129",
+        "Nom Matière": "Mathématiques Lycée 13",
+        "Domaine": "Mathématiques",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "130",
+        "Nom Matière": "Éducation Physique Lycée 14",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "131",
+        "Nom Matière": "Informatique Primaire 14",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "132",
+        "Nom Matière": "Sciences Naturelles Collège 14",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "133",
+        "Nom Matière": "Éducation Physique Collège 14",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "134",
+        "Nom Matière": "Sciences Naturelles Collège 14",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "135",
+        "Nom Matière": "Informatique Lycée 14",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "136",
+        "Nom Matière": "Anglais Technique 14",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "137",
+        "Nom Matière": "Histoire-Géographie Collège 14",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "138",
+        "Nom Matière": "Arabe Collège 14",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "139",
+        "Nom Matière": "Anglais Technique 14",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "140",
+        "Nom Matière": "Éducation Physique Technique 15",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "141",
+        "Nom Matière": "Arts Collège 15",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "142",
+        "Nom Matière": "Mathématiques Technique 15",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "143",
+        "Nom Matière": "Anglais Primaire 15",
+        "Domaine": "Anglais",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "144",
+        "Nom Matière": "Arabe Technique 15",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "145",
+        "Nom Matière": "Histoire-Géographie Technique 15",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "146",
+        "Nom Matière": "Anglais Collège 15",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "147",
+        "Nom Matière": "Arts Collège 15",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "148",
+        "Nom Matière": "Arts Collège 15",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "149",
+        "Nom Matière": "Éducation Physique Collège 15",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "150",
+        "Nom Matière": "Éducation Physique Lycée 16",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "151",
+        "Nom Matière": "Mathématiques Primaire 16",
+        "Domaine": "Mathématiques",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "152",
+        "Nom Matière": "Arabe Lycée 16",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "153",
+        "Nom Matière": "Mathématiques Collège 16",
+        "Domaine": "Mathématiques",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "154",
+        "Nom Matière": "Arabe Lycée 16",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "155",
+        "Nom Matière": "Mathématiques Technique 16",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "156",
+        "Nom Matière": "Informatique Lycée 16",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "157",
+        "Nom Matière": "Anglais Lycée 16",
+        "Domaine": "Anglais",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "158",
+        "Nom Matière": "Informatique Collège 16",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "159",
+        "Nom Matière": "Arabe Primaire 16",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "160",
+        "Nom Matière": "Arts Primaire 17",
+        "Domaine": "Arts",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "161",
+        "Nom Matière": "Anglais Collège 17",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "162",
+        "Nom Matière": "Sciences Naturelles Technique 17",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "163",
+        "Nom Matière": "Sciences Naturelles Collège 17",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "164",
+        "Nom Matière": "Informatique Lycée 17",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "165",
+        "Nom Matière": "Sciences Physiques Collège 17",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "166",
+        "Nom Matière": "Arabe Lycée 17",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "167",
+        "Nom Matière": "Arabe Technique 17",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "168",
+        "Nom Matière": "Sciences Physiques Lycée 17",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "169",
+        "Nom Matière": "Informatique Technique 17",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "170",
+        "Nom Matière": "Français Lycée 18",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "171",
+        "Nom Matière": "Arabe Primaire 18",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "172",
+        "Nom Matière": "Éducation Physique Collège 18",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "173",
+        "Nom Matière": "Éducation Physique Technique 18",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "174",
+        "Nom Matière": "Arabe Technique 18",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "175",
+        "Nom Matière": "Sciences Physiques Collège 18",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "176",
+        "Nom Matière": "Informatique Lycée 18",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "177",
+        "Nom Matière": "Anglais Technique 18",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "178",
+        "Nom Matière": "Français Lycée 18",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "179",
+        "Nom Matière": "Informatique Collège 18",
+        "Domaine": "Informatique",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "180",
+        "Nom Matière": "Informatique Lycée 19",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "181",
+        "Nom Matière": "Informatique Lycée 19",
+        "Domaine": "Informatique",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "182",
+        "Nom Matière": "Éducation Physique Technique 19",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "183",
+        "Nom Matière": "Éducation Physique Primaire 19",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "184",
+        "Nom Matière": "Arts Collège 19",
+        "Domaine": "Arts",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "185",
+        "Nom Matière": "Sciences Naturelles Technique 19",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "186",
+        "Nom Matière": "Mathématiques Technique 19",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "187",
+        "Nom Matière": "Éducation Physique Collège 19",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "188",
+        "Nom Matière": "Histoire-Géographie Collège 19",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "189",
+        "Nom Matière": "Histoire-Géographie Collège 19",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "190",
+        "Nom Matière": "Arabe Lycée 20",
+        "Domaine": "Arabe",
+        "Niveau": "Lycée",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "191",
+        "Nom Matière": "Informatique Technique 20",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "192",
+        "Nom Matière": "Sciences Physiques Primaire 20",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "193",
+        "Nom Matière": "Histoire-Géographie Collège 20",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "194",
+        "Nom Matière": "Sciences Physiques Primaire 20",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "195",
+        "Nom Matière": "Sciences Physiques Collège 20",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "196",
+        "Nom Matière": "Informatique Technique 20",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "197",
+        "Nom Matière": "Mathématiques Primaire 20",
+        "Domaine": "Mathématiques",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "198",
+        "Nom Matière": "Arts Lycée 20",
+        "Domaine": "Arts",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "199",
+        "Nom Matière": "Sciences Physiques Technique 20",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "200",
+        "Nom Matière": "Sciences Naturelles Collège 21",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "201",
+        "Nom Matière": "Histoire-Géographie Primaire 21",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "202",
+        "Nom Matière": "Français Lycée 21",
+        "Domaine": "Français",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "203",
+        "Nom Matière": "Anglais Technique 21",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "204",
+        "Nom Matière": "Sciences Physiques Primaire 21",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "205",
+        "Nom Matière": "Français Primaire 21",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "206",
+        "Nom Matière": "Arabe Collège 21",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "207",
+        "Nom Matière": "Anglais Technique 21",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "208",
+        "Nom Matière": "Arabe Primaire 21",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "209",
+        "Nom Matière": "Français Primaire 21",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "210",
+        "Nom Matière": "Arts Lycée 22",
+        "Domaine": "Arts",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "211",
+        "Nom Matière": "Anglais Technique 22",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "212",
+        "Nom Matière": "Anglais Primaire 22",
+        "Domaine": "Anglais",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "213",
+        "Nom Matière": "Informatique Technique 22",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "214",
+        "Nom Matière": "Éducation Physique Primaire 22",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "215",
+        "Nom Matière": "Informatique Primaire 22",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "216",
+        "Nom Matière": "Histoire-Géographie Lycée 22",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "217",
+        "Nom Matière": "Français Primaire 22",
+        "Domaine": "Français",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "218",
+        "Nom Matière": "Arts Technique 22",
+        "Domaine": "Arts",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "219",
+        "Nom Matière": "Arabe Collège 22",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "220",
+        "Nom Matière": "Mathématiques Primaire 23",
+        "Domaine": "Mathématiques",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "221",
+        "Nom Matière": "Informatique Primaire 23",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "222",
+        "Nom Matière": "Sciences Physiques Lycée 23",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "223",
+        "Nom Matière": "Sciences Naturelles Technique 23",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "224",
+        "Nom Matière": "Français Technique 23",
+        "Domaine": "Français",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "225",
+        "Nom Matière": "Histoire-Géographie Primaire 23",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "226",
+        "Nom Matière": "Sciences Physiques Technique 23",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "227",
+        "Nom Matière": "Français Technique 23",
+        "Domaine": "Français",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "228",
+        "Nom Matière": "Informatique Technique 23",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "229",
+        "Nom Matière": "Sciences Physiques Collège 23",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "230",
+        "Nom Matière": "Éducation Physique Collège 24",
+        "Domaine": "Éducation Physique",
+        "Niveau": "Collège",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "231",
+        "Nom Matière": "Anglais Technique 24",
+        "Domaine": "Anglais",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "232",
+        "Nom Matière": "Arabe Collège 24",
+        "Domaine": "Arabe",
+        "Niveau": "Collège",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "233",
+        "Nom Matière": "Arts Technique 24",
+        "Domaine": "Arts",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "234",
+        "Nom Matière": "Histoire-Géographie Primaire 24",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "235",
+        "Nom Matière": "Histoire-Géographie Technique 24",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "236",
+        "Nom Matière": "Sciences Physiques Lycée 24",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "237",
+        "Nom Matière": "Français Collège 24",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "238",
+        "Nom Matière": "Informatique Primaire 24",
+        "Domaine": "Informatique",
+        "Niveau": "Primaire",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "239",
+        "Nom Matière": "Français Collège 24",
+        "Domaine": "Français",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "240",
+        "Nom Matière": "Arabe Technique 25",
+        "Domaine": "Arabe",
+        "Niveau": "Technique",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "241",
+        "Nom Matière": "Anglais Collège 25",
+        "Domaine": "Anglais",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "242",
+        "Nom Matière": "Informatique Technique 25",
+        "Domaine": "Informatique",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "243",
+        "Nom Matière": "Arabe Primaire 25",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "244",
+        "Nom Matière": "Sciences Naturelles Technique 25",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Technique",
+        "Coefficient": "4"
+    },
+    {
+        "ID": "245",
+        "Nom Matière": "Sciences Naturelles Collège 25",
+        "Domaine": "Sciences Naturelles",
+        "Niveau": "Collège",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "246",
+        "Nom Matière": "Sciences Physiques Lycée 25",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Lycée",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "247",
+        "Nom Matière": "Mathématiques Technique 25",
+        "Domaine": "Mathématiques",
+        "Niveau": "Technique",
+        "Coefficient": "2"
+    },
+    {
+        "ID": "248",
+        "Nom Matière": "Sciences Physiques Primaire 25",
+        "Domaine": "Sciences Physiques",
+        "Niveau": "Primaire",
+        "Coefficient": "1"
+    },
+    {
+        "ID": "249",
+        "Nom Matière": "Histoire-Géographie Lycée 25",
+        "Domaine": "Histoire-Géographie",
+        "Niveau": "Lycée",
+        "Coefficient": "3"
+    },
+    {
+        "ID": "250",
+        "Nom Matière": "Arabe Primaire 26",
+        "Domaine": "Arabe",
+        "Niveau": "Primaire",
+        "Coefficient": "2"
+    }
+]

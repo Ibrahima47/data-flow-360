@@ -5,7 +5,7 @@ import random
 fake = Faker("fr_FR")
 
 # Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://root:root@localhost:27017/")
 db = client["datasetMongo"]
 
 # Récupération des établissements

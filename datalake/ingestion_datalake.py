@@ -1,57 +1,123 @@
-import requests
+import pandas as pd
 from hdfs import InsecureClient
-import csv
+import psycopg2
+import pymysql
+from pymongo import MongoClient
+from cassandra.cluster import Cluster
+from neo4j import GraphDatabase
+import json
 
+# =========================
+# Connexion HDFS
+# =========================
+HDFS_URL = "http://namenode:9870"
+HDFS_USER = "hadoop"
+hdfs_client = InsecureClient(HDFS_URL, user=HDFS_USER)
 
+# =========================
+# PostgreSQL
+# =========================
+def extract_postgresql(host, db, user, password):
+    conn = psycopg2.connect(host=host, dbname=db, user=user, password=password)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT table_name FROM information_schema.tables 
+        WHERE table_schema='public'
+    """)
+    tables = cursor.fetchall()
 
+    for (table_name,) in tables:
+        df = pd.read_sql(f"SELECT * FROM {table_name}", conn)
+        write_to_hdfs(df, f"postgresql/{table_name}")
 
-def recuperer_donnees(endpoint, token):
+    cursor.close()
+    conn.close()
 
-    donnees =  requests.get(f"{url}/{endpoint}", headers={"Authorization":f"Bearer {token}"})
+# =========================
+# MySQL
+# =========================
+def extract_mysql(host, db, user, password):
+    conn = pymysql.connect(host=host, database=db, user=user, password=password)
+    cursor = conn.cursor()
+    cursor.execute("SHOW TABLES")
+    tables = cursor.fetchall()
 
-    return donnees.json()
+    for (table_name,) in tables:
+        df = pd.read_sql(f"SELECT * FROM `{table_name}`", conn)
+        write_to_hdfs(df, f"mysql/{table_name}")
 
-def stocke_data_datalake(client, chemin, contenue):
-    if not contenue:
-        print(f"[WARN] Aucune donnée à écrire dans {chemin}")
-        return
+    cursor.close()
+    conn.close()
 
-    try:
-        with client.write(chemin, overwrite=True, encoding="utf-8") as writer:
-            writer_csv = csv.DictWriter(writer, fieldnames=contenue[0].keys())
-            writer_csv.writeheader()
-            writer_csv.writerows(contenue)
-        print(f"[INFO] Données écrites dans {chemin}")
-    except Exception as e:
-        print(f"[ERROR] Erreur écriture HDFS : {e}")
+# =========================
+# MongoDB
+# =========================
+def extract_mongodb(uri, db_name):
+    client = MongoClient(uri)
+    db = client[db_name]
+    collections = db.list_collection_names()
 
-if __name__=="__main__":
-    url = "http://api_thierno_education:8000"
+    for coll in collections:
+        data = list(db[coll].find())
+        df = pd.DataFrame(data)
+        write_to_hdfs(df, f"mongodb/{coll}")
 
-    client = InsecureClient("http://namenode:9870", user = "hadoop")
+# =========================
+# Cassandra
+# =========================
+def extract_cassandra(contact_points, keyspace):
+    cluster = Cluster(contact_points)
+    session = cluster.connect(keyspace)
+    tables = session.execute("SELECT table_name FROM system_schema.tables WHERE keyspace_name=%s", [keyspace])
 
-    reponse_login = requests.post(f"{url}/utilisateurs/login",params={"username":"Ibrahima_47", "password":"#Passer123"})
-    
-    token = reponse_login.json()["access_token"]
+    for row in tables:
+        query = f"SELECT * FROM {row.table_name}"
+        data = session.execute(query)
+        df = pd.DataFrame(list(data))
+        write_to_hdfs(df, f"cassandra/{row.table_name}")
 
-    # cours = recuperer_donnees("cours",token)
-    # eleves = recuperer_donnees("eleves",token)
-    # etablissement = recuperer_donnees("etablissements",token)
-    # presence = recuperer_donnees("presence",token)
-    # matiere = recuperer_donnees("matiere",token)
-    # enseignant = recuperer_donnees("enseignats",token)
-    # note = recuperer_donnees("notes",token)
-    # region = recuperer_donnees("regions",token)
+    session.shutdown()
+    cluster.shutdown()
 
-    endpoints = ["eleves", "enseignants", "notes", "presences", "matiere", "regions", "etablissements", "cours"]
-    data_map = {}
+# =========================
+# Neo4j
+# =========================
+def extract_neo4j(uri, user, password):
+    driver = GraphDatabase.driver(uri, auth=(user, password))
+    with driver.session() as session:
+        labels = session.run("CALL db.labels()").data()
+        for label in labels:
+            label_name = label['label']
+            result = session.run(f"MATCH (n:`{label_name}`) RETURN n")
+            nodes = [record['n']._properties for record in result]
+            df = pd.DataFrame(nodes)
+            write_to_hdfs(df, f"neo4j/{label_name}")
+    driver.close()
 
-    for endpoint in endpoints:
-        data_map[endpoint] = recuperer_donnees(endpoint, token)
+# =========================
+# Fonction commune pour écrire dans HDFS
+# =========================
+def write_to_hdfs(df, path_prefix):
+    csv_path = f"/data/{path_prefix}.csv"
+    json_path = f"/data/{path_prefix}.json"
 
-    chemin_principal = "/data/datalake/"
+    # Écriture CSV
+    with hdfs_client.write(csv_path, encoding='utf-8') as writer:
+        df.to_csv(writer, index=False)
 
-    for key, data in data_map.items():
-        stocke_data_datalake(client, chemin_principal + f"{key}_api.csv", data)
+    # Écriture JSON
+    with hdfs_client.write(json_path, encoding='utf-8') as writer:
+        df.to_json(writer, orient='records', lines=True)
 
-    print("[INFO] Terminé.")
+    print(f"✅ Données écrites : {csv_path} et {json_path}")
+
+# =========================
+# Exemple d'utilisation
+# =========================
+if __name__ == "__main__":
+    # extract_postgresql("localhost", "education", "user", "password")
+    extract_mysql("mysql-api", "dataflow360", "root", "1234")
+    extract_mongodb("mongodb://root:root@localhost:27017", "datasetMongo")
+    extract_mongodb("mongodb://root:root@localhost:27017", "education")
+    extract_cassandra(["cassandra"], "ma_keyspace")
+    extract_neo4j("bolt://localhost:7687", "neo4j", "12345678")
