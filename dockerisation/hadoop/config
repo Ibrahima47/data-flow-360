@@ -29,3 +29,4 @@ HDFS-SITE.XML_dfs.namenode.http-address=namenode:9870
 HDFS-SITE.XML_dfs.namenode.https-address=namenode:9871
 HDFS-SITE.XML_dfs.datanode.http.address=0.0.0.0:9864
 HDFS-SITE.XML_dfs.datanode.https.address=0.0.0.0:9865
+HDFS-SITE.XML_dfs.datanode.hostname=localhost

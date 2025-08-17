@@ -23,9 +23,9 @@ def stocke_data_datalake(client, chemin, contenue):
         print(f"[ERROR] Erreur écriture HDFS : {e}")
 
 if __name__=="__main__":
-    url = "http://api_thierno_education:8000"
+    url = "http://localhost:8000"
 
-    client = InsecureClient("http://namenode:9870", user = "hadoop")
+    client = InsecureClient("http://localhost:9870", user = "hadoop")
 
     reponse_login = requests.post(f"{url}/utilisateurs/login",params={"username":"Ibrahima_47", "password":"#Passer123"})
     
@@ -46,7 +46,7 @@ if __name__=="__main__":
     for endpoint in endpoints:
         data_map[endpoint] = recuperer_donnees(endpoint, token)
 
-    chemin_principal = "/data/datalake/"
+    chemin_principal = "/data/datalake/API_thierno/"
 
     for key, data in data_map.items():
         stocke_data_datalake(client, chemin_principal + f"{key}_api.csv", data)

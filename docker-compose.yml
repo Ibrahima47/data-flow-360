@@ -17,6 +17,7 @@ services:
 
   namenode:
     image: apache/hadoop:3
+    container_name: namenode
     hostname: namenode
     command: ["hdfs", "namenode"]
     ports:
@@ -25,11 +26,14 @@ services:
     env_file:
       - ./dockerisation/hadoop/config
     environment:
-      ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+      ENSURE_NAMENODE_DIR: "/hadoop-root/dfs/name"
     networks:
       - projet3604-net
-
+    volumes:
+      - ./dockerisation/hadoop/hdfs/namenode1/:/hadoop/dfs/name/
+  
   datanode:
+    container_name: datanode
     image: apache/hadoop:3
     command: ["hdfs", "datanode"]
     env_file:
@@ -38,6 +42,8 @@ services:
       - projet3604-net
     ports:
       - "9864:9864"
+    volumes:
+      - ./dockerisation/hadoop/hdfs/datanode1/:/hadoop/dfs/data/
 
   resourcemanager:
     image: apache/hadoop:3
@@ -206,7 +212,7 @@ services:
   #     - 7077:7077
   #     - 8080:8080
   #   networks:
-  #     - projet360-net
+  #     - projet3604-net
   #   depends_on:
   #     - namenode
   #     - datanode
@@ -225,7 +231,7 @@ services:
   #     - SPARK_WORKER_CORES=4
   #     - SPARK_WORKER_MEMORY=9G
   #   networks:
-  #     - projet360-net
+  #     - projet3604-net
 
   # spark-worker2:
   #   image: bitnami/spark:latest
@@ -240,7 +246,7 @@ services:
   #     - SPARK_WORKER_CORES=3
   #     - SPARK_WORKER_MEMORY=4G
   #   networks:
-  #     - projet360-net
+  #     - projet3604-net
 
   # spark-submit:
   #   image: bitnami/spark:latest
@@ -255,7 +261,7 @@ services:
   #     - namenode
   #     - datanode
   #   networks:
-  #     - projet360-net
+  #     - projet3604-net
 
 
 volumes:

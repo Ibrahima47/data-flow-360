@@ -10,12 +10,12 @@ from neo4j import GraphDatabase
 # ========================
 # 1. Connexion HDFS
 # ========================
-hdfs_client = InsecureClient("http://namenode:9870", user="hadoop")
+hdfs_client = InsecureClient("http://localhost:9870", user="hadoop")
 
 # ========================
 # 2. PostgreSQL (stream)
 # ========================
-def export_postgresql_to_hdfs_csv_json(host, dbname, user, password, hdfs_dir="/data/postgre", batch_size=10000):
+def export_postgresql_to_hdfs_csv_json(host, dbname, user, password, hdfs_dir="/data/datalake/postgre", batch_size=10000):
     conn = psycopg2.connect(host=host, dbname=dbname, user=user, password=password)
     cursor = conn.cursor()
 
@@ -63,7 +63,7 @@ def export_postgresql_to_hdfs_csv_json(host, dbname, user, password, hdfs_dir="/
 # ========================
 # 3. MongoDB (stream)
 # ========================
-def export_mongodb_to_hdfs_csv_json(uri, dbname, hdfs_dir="/data/mongoDB", batch_size=10000):
+def export_mongodb_to_hdfs_csv_json(uri, dbname, hdfs_dir="/data/datalake/mongoDB", batch_size=10000):
     client = pymongo.MongoClient(uri)
     db = client[dbname]
 
@@ -71,7 +71,7 @@ def export_mongodb_to_hdfs_csv_json(uri, dbname, hdfs_dir="/data/mongoDB", batch
         collection = db[collection_name]
 
         # CSV
-        with hdfs_client.write(f"{hdfs_dir}/{collection_name}.csv", encoding="utf-8") as writer:
+        with hdfs_client.write(f"{hdfs_dir}/{collection_name}.csv", encoding="utf-8", overwrite=True) as writer:
             cursor = collection.find({}, batch_size=batch_size)
             first_doc = next(cursor, None)
             if not first_doc:
@@ -84,7 +84,7 @@ def export_mongodb_to_hdfs_csv_json(uri, dbname, hdfs_dir="/data/mongoDB", batch
                 csv_writer.writerow([doc.get(k, "") for k in keys])
 
         # JSON
-        with hdfs_client.write(f"{hdfs_dir}/{collection_name}.json", encoding="utf-8") as writer:
+        with hdfs_client.write(f"{hdfs_dir}/{collection_name}.json", encoding="utf-8", overwrite=True) as writer:
             cursor = collection.find({}, batch_size=batch_size)
             writer.write("[")
             first = True
@@ -100,53 +100,65 @@ def export_mongodb_to_hdfs_csv_json(uri, dbname, hdfs_dir="/data/mongoDB", batch
 # ========================
 # 4. MySQL (stream)
 # ========================
-def export_mysql_to_hdfs_csv_json(host, user, password, database, hdfs_dir="/data/mysql", batch_size=10000):
-    conn = mysql.connector.connect(host=host, user=user, password=password, database=database)
+def export_mysql_to_hdfs_csv_json(host, user, password, database, hdfs_dir="/data/datalake/mysql", batch_size=10000):
+    conn = mysql.connector.connect(host=host, user=user, password=password, database=database, port=3308)
     cursor = conn.cursor()
 
     cursor.execute("SHOW TABLES")
     tables = cursor.fetchall()
+    cursor.close()
+    [print(table) for table in tables]
 
     for (table_name,) in tables:
+        print(f" nom de la table :: {table_name}")
+        cursor = conn.cursor()
         cursor.execute(f"SELECT * FROM {table_name} LIMIT 0")
         columns = [desc[0] for desc in cursor.description]
+        cursor.fetchall()
+        cursor.close()
 
         # CSV
-        with hdfs_client.write(f"{hdfs_dir}/{table_name}.csv", encoding="utf-8") as writer:
+        with hdfs_client.write(f"{hdfs_dir}/{table_name}.csv", encoding="utf-8", overwrite=True) as writer:
             csv_writer = csv.writer(writer)
             csv_writer.writerow(columns)
-            cursor.execute(f"SELECT * FROM {table_name}")
+
+            cursor_csv = conn.cursor()
+            cursor_csv.execute(f"SELECT * FROM {table_name}")
             while True:
-                rows = cursor.fetchmany(batch_size)
+                rows = cursor_csv.fetchmany(batch_size)
                 if not rows:
                     break
                 csv_writer.writerows(rows)
+            cursor_csv.close()
 
         # JSON
-        with hdfs_client.write(f"{hdfs_dir}/{table_name}.json", encoding="utf-8") as writer:
-            cursor.execute(f"SELECT * FROM {table_name}")
+        with hdfs_client.write(f"{hdfs_dir}/{table_name}.json", encoding="utf-8", overwrite=True) as writer:
+            cursor_json = conn.cursor()
+            cursor_json.execute(f"SELECT * FROM {table_name}")
             first = True
             writer.write("[")
             while True:
-                rows = cursor.fetchmany(batch_size)
+                rows = cursor_json.fetchmany(batch_size)
                 if not rows:
                     break
                 for row in rows:
                     if not first:
                         writer.write(",")
-                    writer.write(json.dumps(dict(zip(columns, row))))
+                    writer.write(json.dumps(dict(zip(columns, row)), default=str))
                     first = False
             writer.write("]")
+            cursor_json.close()
 
-    cursor.close()
+
     conn.close()
 
 # ========================
 # 5. Cassandra (stream)
 # ========================
-def export_cassandra_to_hdfs_csv_json(hosts, keyspace, hdfs_dir="/data/cassandra", batch_size=10000):
+def export_cassandra_to_hdfs_csv_json(hosts, keyspace, hdfs_dir="/data/datalake/cassandra", batch_size=10000):
     cluster = Cluster(hosts)
     session = cluster.connect(keyspace)
+    session.default_fetch_size = batch_size
 
     tables = session.execute("SELECT table_name FROM system_schema.tables WHERE keyspace_name=%s", [keyspace])
     for row in tables:
@@ -155,18 +167,18 @@ def export_cassandra_to_hdfs_csv_json(hosts, keyspace, hdfs_dir="/data/cassandra
         columns = [col.column_name for col in columns_info]
 
         query = f"SELECT * FROM {table_name}"
-        result = session.execute(query, fetch_size=batch_size)
+        result = session.execute(query)
 
         # CSV
-        with hdfs_client.write(f"{hdfs_dir}/{table_name}.csv", encoding="utf-8") as writer:
+        with hdfs_client.write(f"{hdfs_dir}/{table_name}.csv", encoding="utf-8", overwrite=True) as writer:
             csv_writer = csv.writer(writer)
             csv_writer.writerow(columns)
             for row in result:
                 csv_writer.writerow([getattr(row, col) for col in columns])
 
         # JSON
-        result = session.execute(query, fetch_size=batch_size)
-        with hdfs_client.write(f"{hdfs_dir}/{table_name}.json", encoding="utf-8") as writer:
+        result = session.execute(query)
+        with hdfs_client.write(f"{hdfs_dir}/{table_name}.json", encoding="utf-8", overwrite=True) as writer:
             writer.write("[")
             first = True
             for row in result:
@@ -181,7 +193,7 @@ def export_cassandra_to_hdfs_csv_json(hosts, keyspace, hdfs_dir="/data/cassandra
 # ========================
 # 6. Neo4j (stream)
 # ========================
-def export_neo4j_to_hdfs_csv_json(uri, user, password, hdfs_dir="/data/neo4j"):
+def export_neo4j_to_hdfs_csv_json(uri, user, password, hdfs_dir="/data/datalake/neo4j"):
     driver = GraphDatabase.driver(uri, auth=(user, password))
     with driver.session() as session:
         # Export des noeuds
@@ -230,8 +242,8 @@ def export_neo4j_to_hdfs_csv_json(uri, user, password, hdfs_dir="/data/neo4j"):
 
 if __name__ == "__main__":
     # extract_postgresql("localhost", "education", "user", "password")
-    export_mysql_to_hdfs_csv_json("mysql-api", "dataflow360", "root", "1234")
-    export_mongodb_to_hdfs_csv_json("mongodb://root:root@localhost:27017", "datasetMongo")
-    export_mongodb_to_hdfs_csv_json("mongodb://root:root@localhost:27017", "education")
-    export_cassandra_to_hdfs_csv_json(["cassandra"], "education")
-    export_neo4j_to_hdfs_csv_json("bolt://localhost:7687", "neo4j", "12345678")
+    # export_mysql_to_hdfs_csv_json("localhost", "root", "1234", "education"),
+    # export_mongodb_to_hdfs_csv_json("mongodb://root:root@localhost:27017", "education",hdfs_dir="/data/datalake/mongoDB/Idia")
+    # export_mongodb_to_hdfs_csv_json("mongodb://root:root@localhost:27017", "datasetMongo",hdfs_dir="/data/datalake/mongoDB/Ibra")
+    # export_neo4j_to_hdfs_csv_json("bolt://localhost:7687", "neo4j", "12345678")
+    export_cassandra_to_hdfs_csv_json(["localhost"], "education")
